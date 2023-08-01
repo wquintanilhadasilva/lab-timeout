@@ -18,3 +18,12 @@ docker run -d --rm --name timeout-app \
     -p 3000:3000 \
     wquintanilhadasilva/timeout-app
 ```
+
+
+## Comando curl
+
+O comando curl abaixo executa a chamada e aguarda o tempo configurado
+```
+curl --request GET \
+  --url http://localhost:3000
+```
