@@ -14,6 +14,7 @@ app.use(function (req, res, next) {
 
 app.get('/', (req, res) => {
   const timeout = process.env.TIMEOUT ? parseInt(process.env.TIMEOUT) : 60000;
+  console.log(`Recebi a requisição, vou esperar ${timeout} para retornar. Vou dormir agora`)
   setTimeout(() => {
     res.send('Example app listening timeout sucess for ' + timeout + ' seconds!')
   }, timeout)
